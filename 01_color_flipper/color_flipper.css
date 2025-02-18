@@ -1,0 +1,30 @@
+body, html { padding: 0; margin: 0 }
+
+#wrapper { 
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#btn {
+  padding: 50px;
+  margin: 50px;
+  font-size: 50px;
+  background-color: #000;
+  color: #efefef
+}
+
+
+#text {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  
+  font-size: 50px;
+  color: #000;
+  text-align: center;
+  padding: 22px 0
+}

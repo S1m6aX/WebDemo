@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .section {
+            width: 400px;
+        }
+        #section-countdown {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .square {
+            height: 50px;
+            width: 50px;
+            background-color: midnightblue;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .num {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .text {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="section" id="section-img">
+            <img src="https://picsum.photos/300/200" alt="Random Image">
+        </div>
+        <div class="section" id="section-text">
+            <div class="subsec" id="section-title">
+                OLD IPHONE GIVEAWAY
+            </div>
+            <div class="subsec" id="section-date">
+                Giveaway Ends On Saturday, 27 July 2024 11:30am
+            </div>
+            <div class="subsec" id="section-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veritatis explicabo nam architecto animi similique sunt enim recusandae, accusamus quisquam nobis blanditiis sint quae eius voluptates at voluptate. Iste, necessitatibus!
+            </div>
+            <div class="subsec" id="section-countdown">
+                <div class="square">
+                    <div class="num" id="day"></div>
+                    <div class="text">DAY</div>
+                </div>
+                <div class="square">
+                    <div class="num" id="hour"></div>
+                    <div class="text">HOURS</div>
+                </div>
+                <div class="square">
+                    <div class="num" id="min"></div>
+                    <div class="text">MINS</div>
+                </div>
+                <div class="square">
+                    <div class="num" id="sec"></div>
+                    <div class="text">SECS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='./app.js'></script>
+</body>
+</html>
