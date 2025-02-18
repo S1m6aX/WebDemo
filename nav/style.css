@@ -1,0 +1,49 @@
+/* 自定义链接样式 */
+body {
+    /* 设置背景图片 */
+    background-image: url('./src/img/background.jpeg');
+    /* 设置背景大小为覆盖整个屏幕 */
+    background-size: 100% 100%;
+    /* 设置背景重复为不重复 */
+    background-repeat: no-repeat;
+    /* 设置背景固定，不随滚动而滚动 */
+    background-attachment: fixed;
+    /* 如果需要，你可以设置背景位置 */
+    /* background-position: center center; */
+  }
+
+#section-cards {
+    display: flex; /* 将 section 元素设为 Flex 容器 */
+    justify-content: center; /* 水平居中其子元素 */
+} 
+
+.card{
+    margin: 30px;
+}
+@font-face {
+    font-family: 'BigNoodleTitling';
+    src: url('/src/bignoodletitling/big_noodle_titling.ttf');
+    /* 如果你有其他样式（如粗体、斜体等），你需要为每个样式重复此规则 */
+  }
+.card-text{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-family: 'BigNoodleTitling', sans-serif;
+    font-size: 25px;
+    padding: 0px;
+
+}
+
+.card-link {
+    text-decoration: none; /* 移除下划线 */
+    color: inherit; /* 继承父元素的文字颜色 */
+}
+
+.card-link:hover {
+    text-decoration: none; /* 移除鼠标悬停时的下划线 */
+    color: inherit; /* 继承父元素的文字颜色 */
+}
+.card-body{
+    border-top: 2px solid black;
+}
