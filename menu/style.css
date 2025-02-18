@@ -1,0 +1,17 @@
+.section{
+  display: flex;
+  justify-content: center;
+}
+
+#section-title{
+  font-size: 200px;
+  font-weight: bolder;
+}
+
+#btn{
+  background-color: blue;
+  color: white;
+  height:50px;
+  width:80px;
+}
+
