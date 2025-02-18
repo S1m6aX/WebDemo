@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid black;
+            box-shadow: 0px 0px 5px #888888;
+        }
+        #button{
+            position: absolute;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section" id="container">
+        <div id="title">Do You Accept All Major Credit Cards?<span id="button"><button id="btn">+</button></span></div>
+        
+        <div id="text"></div>
+    </div>
+    <script>
+        const textEl = document.getElementById('text')
+        const btnEl = document.getElementById('btn')
+        isBtn = true
+        btnEl.addEventListener('click', function(){
+            if (isBtn){
+                btnEl.innerHTML = '-'
+                textEl.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.'
+                isBtn = false
+            }else{
+                btnEl.innerHTML = '+'
+                textEl.innerHTML = ''
+                isBtn = true
+            }
+        })
+    </script>
+</body>
+</html>
